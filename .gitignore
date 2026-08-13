@@ -1,0 +1,22 @@
+# Build
+backend/**/target/
+frontend/node_modules/
+frontend/dist/
+
+# Runtime
+backend/app/data/
+*.db
+*.mv.db
+*.trace.db
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs / env
+*.log
+.env
+.env.*

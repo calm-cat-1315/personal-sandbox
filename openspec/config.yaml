@@ -1,0 +1,21 @@
+schema: spec-driven
+
+context: |
+  个人模块化单体沙盒，用于学习与多点子实验。
+  技术栈：Java 21、Spring Boot 4.1、Spring Modulith、Maven 多模块、
+  Vue 3 + TypeScript + Vite + Vue Router。
+  目录：backend/{app,platform,work-management}、frontend/、samples/。
+  第一业务能力：work-management 日工时 CSV 导入 + 列表展示。
+  本地默认：后端 :8080（H2 文件库），前端 :5173（/api 代理到后端）。
+  首版脚手架无鉴权；后续点子以 Modulith 新模块扩展，不拆微服务。
+  文档约定：OpenSpec 制品（proposal/specs/design/tasks）默认使用中文撰写。
+
+rules:
+  proposal:
+    - 使用中文撰写
+  specs:
+    - 使用中文撰写需求与场景描述；保留 ADDED/Requirement/Scenario 与 WHEN/THEN/AND 结构关键字
+  design:
+    - 使用中文撰写
+  tasks:
+    - 使用中文撰写任务描述
