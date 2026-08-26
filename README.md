@@ -4,7 +4,7 @@
 
 ## 技术栈
 
-- **Backend:** Java 21, Spring Boot 4.1, Spring Modulith, Maven, JPA, H2
+- **Backend:** Java 21, Spring Boot 4.1, Spring Modulith, Maven, JPA, MySQL
 - **Frontend:** Vue 3, TypeScript, Vite, Vue Router
 - **第一业务模块:** `work-management`（日工时 CSV 导入与展示）
 
@@ -26,6 +26,27 @@ personal-sandbox/
 - JDK 21（本机示例路径：`D:\MyTool\JAVA\jdk-21.0.12`）
 - Maven 3.9+
 - Node.js 20+ / npm
+- 本机 MySQL 8（默认 `localhost:3306`）
+
+## 本地 MySQL
+
+后端默认连接本机 MySQL，库名 `sandbox`：
+
+| 项 | 值 |
+|----|-----|
+| 主机 | `localhost` |
+| 端口 | `3306` |
+| 数据库 | `sandbox`（不存在时 JDBC 会尝试创建） |
+| 用户名 | `root` |
+| 密码 | `123456` |
+
+请确保 MySQL 服务已启动，且 `root` 具备建库与建表权限。可用 Navicat、DBeaver 或命令行连接同一实例。
+
+连接串（JDBC）：
+
+```text
+jdbc:mysql://localhost:3306/sandbox?serverTimezone=UTC&characterEncoding=utf8
+```
 
 ## 启动后端
 
